@@ -6,13 +6,13 @@
 
 ```
 # with npx
-$ npx create-nextron-app my-app --example with-javascript
+$ npx create-nextron-app my-app --example basic-javascript
 
 # with yarn
-$ yarn create nextron-app my-app --example with-javascript
+$ yarn create nextron-app my-app --example basic-javascript
 
 # with pnpx
-$ pnpx create-nextron-app my-app --example with-javascript
+$ pnpx create-nextron-app my-app --example basic-javascript
 ```
 
 ### Install Dependencies

@@ -14,11 +14,9 @@ if (isProd) {
   await app.whenReady();
 
   const mainWindow = createWindow('main', {
-    width: 360,
-    height: 640,
+    width: 1000,
+    height: 600,
   });
-  
-  mainWindow.removeMenu(true)
 
   if (isProd) {
     await mainWindow.loadURL('app://./home.html');
@@ -27,6 +25,7 @@ if (isProd) {
     await mainWindow.loadURL(`http://localhost:${port}/home`);
     mainWindow.webContents.openDevTools();
   }
+  mainWindow.setMenuBarVisibility(false)
 })();
 
 app.on('window-all-closed', () => {

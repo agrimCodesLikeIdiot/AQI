@@ -11,7 +11,6 @@ export default function createWindow(windowName, options) {
   const defaultSize = {
     width: options.width,
     height: options.height,
-    maximizable: false
   };
   let state = {};
   let win;
@@ -68,8 +67,8 @@ export default function createWindow(windowName, options) {
   state = ensureVisibleOnSomeDisplay(restore());
 
   win = new BrowserWindow({
-    ...options,
     ...state,
+    ...options,
     webPreferences: {
       nodeIntegration: true,
       contextIsolation: false,
